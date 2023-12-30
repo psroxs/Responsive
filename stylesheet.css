@@ -32,12 +32,11 @@ img{
     margin: 0px 10px 10px 20px;
     border-color: black;
     border-style: solid;
-    border-width: small;
+    border-width: 1vw;
 }
 @media only screen and (min-width: 600px) {
     img{
-        max-width: 350px;
-        border-width: 0,01vw;}
+        max-width: 350px;}
 }
 [class*="col-"]{
     width:100%;
