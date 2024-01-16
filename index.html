@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title>Responsive</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            [class*="col-"]{
+                width:100%;
+            }
+            @media only screen and (min-width: 600px) {
+            [class*="col-"]{
+                float:left;
+                padding:15px;
+            }
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            }
+            body{
+                font-family:'Courier New', Courier, monospace;
+                font-size:calc(11px + 1.5vw);
+                background-color: gray;
+                padding: 10px;
+            }
+            @media only screen and (min-width: 600px) {
+            body{
+                background-color:black;
+                font-size:1vw;}
+            }
+            h1{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: white;
+                background-color:black;
+                font-size: calc(16px + 4vw);
+                width: 100%;
+                text-align: center;   
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                Opacity: 0.5;}
+            h3{
+                font-size:calc(14px + 1vw);
+            }
+            img{
+                float:right;
+                vertical-align: bottom;
+                width:100%;
+                height:auto;
+                margin: 0px 10px 10px 20px;
+                border-color: black;
+                border-style: solid;
+                border-width: 1vh;
+            }
+            @media only screen and (min-width: 600px) {
+            img{
+                max-width: 350px;}
+            }
+            .header{
+                height: auto;
+                width: 100%;
+                min-height: 200px;
+                background-image: url(images/Lissabon2.jpg);
+                background-size:100%;
+                background-repeat: no-repeat;
+                background-position: center;   
+            }
+            .Links{
+                width: 100%;
+                padding: 0px 10px 0px 10px;
+            }
+            @media only screen and (min-width: 600px) {
+            .Links{
+                color:green;
+                padding: 0px 10px 0px 10px;}
+            }
+            .footer{
+                background-color: greenyellow;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                font-weight: bold;
+            }
+            .Vragen{
+                background-color: white;
+                padding: 5px 10px 25px 20px;
+                height:min-content;
+            }
+            ul{
+                list-style-type: decimal;}
+        </style>
+    </head>
+    <body>
+        <div class="header"><br><h1>Hoofdstuk 18</h1><br></div>
+        <div class="row">
+        <div class="col-2">
+            <div class="Links">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Integer eget ante non elit faucibus consectetur non nec eros.
+            Ut eget ex vitae lorem bibendum rutrum.
+            Nullam eget urna eu nibh suscipit mattis.
+            Donec id odio ac sem aliquet sodales a nec urna.<br><br>
+        </div></div></div>   
+        <div class="col-9">
+            <div class="Vragen">
+                <h3>Vragen</h3>
+                <img src="images/voorbeeld.jpg" alt="voorbeeld">
+                <ul><li>Hoe pas ik de code aan zodat het witte vlak zo groot is dat ook de afbeelding er helemaal in past? Op mobiel scherm gaat dit wel goed, maar op een laptop beeldscherm valt een deel van de afbeelding buiten het witte vlak.</li>
+                    <li>De afbeelding in de header wordt verkleind op het moment dat ik het beeldscherm kleiner maak, maar de afbeelding in het witte vlak doet dat niet. Zou dit ook moeten voor een goede responsive website? Zo ja, hoe pas ik dit aan in de code?</li>
+                    <li>De afbeelding in de header wordt wel vergroot en verkleind. Op een gegeven moment wordt deze te smal waardoor de afbeelding naar beneden verschoven wordt en de titel deels buiten de achtergrondafbeelding valt (zie voorbeeld rechts). Dit vind ik niet mooi. Hoe kan ik de code aanpassen dat de afbeelding tot op zekere hoogte responsive maken, maar de hoogte van de afbeelding vastzetten? Het gedeelte dat op dat moment niet binnen de afmetingen valt zou in dat geval afgesneden moeten worden.</li>
+                    <li>Hoe kan ik de nummering van deze lijst links uitlijnen gelijk aan de titel 'Vragen'? Er zit nu een inspringing in die ik automatisch krijg als ik een lijst maak.</li>
+                    <li>Hoe krijg ik in de code de afbeelding in het witte vlak op m'n mobiel aan de linkerkant uitgelijnd met de titel en de tekst in het witte vlak? Of moet dit juist gecentreerd zijn? En zo ja, hoe doe ik dat in de code?</li></ul><br><br>
+                </div><br></div>
+            <div class="col-12">
+        <div class="footer"><br><br>&copy; Petra Simons 2023<br><br></div></div>
+    </body>
+</html>
